@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.song);
                     mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
-                        public void onCompletion(MediaPlayer mp) {
+                        public void onCompletion(MediaPlayer mediaPlayer) {
                             mediaPlayer.stop();
                         }
                     });
